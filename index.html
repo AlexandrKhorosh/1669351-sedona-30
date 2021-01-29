@@ -2,19 +2,20 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <header>
+    <a href="index.html">
+      <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+    </a>
     <nav>
-      <a href="">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-      </a>
       <ul>
         <li>
-          <a href="">Информация</a>
+          <a href="index.html">Информация</a>
         </li>
         <li>
           <a href="#">Фото и видео</a>
@@ -27,53 +28,58 @@
         </li>
       </ul>
     </nav>
-    <div>
-      <a>
-        <img src="img/welcome.png" alt="Welcome">
-      </a>
-    </div>
+
   </header>
 
   <main>
-
+    <div>
+      <img src="img/welcome.png" alt="Welcome">
+    </div>
     <section>
-      <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </section>
-
-    <section>
-      <h3>Настоящий городок</h3>
-      <p>-№1-</p>
-      <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-      <img src="img/image.png" alt="building">
+      <div>
+        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <ul>
         <li>
-          <img src="img/icon-1.png" alt="House">
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <div>
+            <h3>Настоящий городок</h3>
+            <p>-№1-</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div>
+            <img src="img/image.png" alt="building">
+          </div>
+          <ul>
+            <li>
+              <img src="img/icon-1.png" alt="house">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li>
+              <img src="img/icon-2.png" alt="burger">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li>
+              <img src="img/icon-3.png" alt="gift">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </li>
         <li>
-          <img src="img/icon-2.png" alt="Burger">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <section>
+            <div>
+              <img src="img/image2.png" alt="canyon">
+            </div>
+            <div>
+              <h3>Там есть мост дьявола</h3>
+              <p>-№2-</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </section>
         </li>
-        <li>
-          <img src="img/icon-3.png" alt="Gift">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <img src="img/image2.png" alt="canyon">
-      <h3>Там есть мост дьявола</h3>
-      <p>-№2-</p>
-      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-    </section>
-
-    <section>
-      <ul>
         <li>
           <h3>Небольшая площадь</h3>
           <p>-№3-</p>
@@ -87,73 +93,77 @@
         <li>
           <h3>Мало туристов</h3>
           <p>-№5-</p>
-          <p>большинство едет в гранд каньон и толпится там</p>
+          <p>ольшинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
+
     <section>
       <h2>Заинтересовались ?</h2>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <h3>Поиск гостиницы в седоне</h3>
-    </section>
-    <section>
-      <img src="img/map.png" alt="map">
       <div>
+        <h3>Поиск гостиницы в седоне</h3>
         <div>
-          <label for="from">Дата заезда:</label>
-          <input type="text" id="from">
-          <button type="button">Календарь</button>
-        </div>
-        <div>
-          <label for="to">Дата выезда:</label>
-          <input type="text" id="to">
-          <button type="button">Календарь</button>
-        </div>
-        <div>
-          <label for="number1">Взрослые</label>
           <div>
-            <button>Минус</button>
-            <input type="text" id="number1">
-            <button>Плюс</button>
+            <label for="from">Дата заезда:</label>
+            <input type="text" id="from">
+            <button type="button">Календарь</button>
           </div>
-        </div>
-        <div>
-          <label for="number2">Дети</label>
           <div>
-            <button>Минус</button>
-            <input type="text" id="number2">
-            <button>Плюс</button>
+            <label for="to">Дата выезда:</label>
+            <input type="text" id="to">
+            <button type="button">Календарь</button>
           </div>
+          <div>
+            <label for="number1">Взрослые</label>
+            <div>
+              <button>Минус</button>
+              <input type="text" id="number1">
+              <button>Плюс</button>
+            </div>
+          </div>
+          <div>
+            <label for="number2">Дети</label>
+            <div>
+              <button>Минус</button>
+              <input type="text" id="number2">
+              <button>Плюс</button>
+            </div>
+          </div>
+          <button type="submit">Найти</button>
         </div>
-        <button type="submit">Найти</button>
+      </div>
+      <div>
+        <img src="img/map.png" alt="map">
       </div>
     </section>
   </main>
 
   <footer>
     <section>
-      <h2>#Visitsedona</h2>
-      ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a>
+      <div>
+        <h2>#Visitsedona</h2>
+        ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://twitter.com/htmlacademy_ru">Твиттер</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/htmlacademy/">Фейсбук</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115" height="41"
+            alt="Логотип Html Academy"></a>
+      </div>
     </section>
-    <div>
-      <ul>
-        <li>
-          <a
-            href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Твиттер</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/htmlacademy/">Фейсбук</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Ютуб</a>
-        </li>
-      </ul>
-    </div>
-    <p>
-      Website by
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115" height="41"
-          alt="Logo Html Academy"></a>
-    </p>
   </footer>
 </body>
 

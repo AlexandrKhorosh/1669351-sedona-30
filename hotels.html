@@ -8,10 +8,10 @@
 
 <body>
   <header>
+    <a href="index.html">
+      <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+    </a>
     <nav>
-      <a href="index.html">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-      </a>
       <ul>
         <li>
           <a href="index.html">Информация</a>
@@ -23,7 +23,7 @@
           <a href="#">Карта штата</a>
         </li>
         <li>
-          <a href="">Гостиницы</a>
+          <a href="hotels.html">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -59,16 +59,15 @@
         <legend>Стоимость в сутки (р):</legend>
         <div>
           <label for="range1">От</label>
-          <input type="text" id="range1">
+          <input type="number" id="range1">
         </div>
         <div>
           <label for="range2">До</label>
-          <input type="text" id="range2">
+          <input type="number" id="range2">
         </div>
         <div>
           <div>Шкала</div>
-          <button>От</button>
-          <button>До</button>
+          <input type="range">
         </div>
         <button type="submit">Показать</button>
       </fieldset>
@@ -76,12 +75,11 @@
   </section>
 
   <section>
+    <div>Найдено 3:</div>
+    <div>Сортировка:</div>
     <ul>
       <li>
-        <div>Найдено 3:</div>
-      </li>
-      <li>Сортировка:</li>
-      <li>
+
         <a href="#">По цене</a>
       </li>
       <li>
@@ -160,28 +158,29 @@
 
   <footer>
     <section>
-      <h2>#Visitsedona</h2>
-      ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a>
+      <div>
+        <h2>#Visitsedona</h2>
+        ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://twitter.com/htmlacademy_ru">Твиттер</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/htmlacademy/">Фейсбук</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115" height="41"
+            alt="Логотип Html Academy"></a>
+      </div>
     </section>
-    <div>
-      <ul>
-        <li>
-          <a
-            href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Твиттер</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/htmlacademy/">Фейсбук</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Ютуб</a>
-        </li>
-      </ul>
-    </div>
-    <p>
-      Website by
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115" height="41"
-          alt="Logo Html Academy"></a>
-    </p>
   </footer>
 </body>
 
