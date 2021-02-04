@@ -22,7 +22,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -73,7 +73,6 @@ img {
 /* Button */
 
 .button-submit {
-  font: inherit;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -152,9 +151,9 @@ img {
 }
 
 .form-settings {
-background-image: url("../img/background2.jpg");
-background-position: top center;
-background-repeat: no-repeat;
+  background-image: url("../img/background2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 /* Footer */
