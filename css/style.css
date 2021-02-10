@@ -4,6 +4,8 @@
   --basic-black: #000000;
   --basic-light-gray: #EEEEEE;
   --basic-gray: #EBEBEB;
+  --basic-special-gray: #666666;
+  --basick-dark-gray: #333333;
   --basic-white-smoke: #F2F2F2;
   --basic-white: #ffffff;
   --basic-light-blue: #81B3D2;
@@ -252,11 +254,16 @@ img {
 
 .hotels {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr auto;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.hotels:first-child {
+  border-top: 1px solid #E5E5E5;
 }
 
 .image-hotel {
-  margin: 30px;
+  margin: 40px;
   margin-left: 73px;
 }
 
@@ -265,10 +272,19 @@ img {
   padding: 0;
 }
 
+span {
+  color: var(--basick-dark-gray);
+}
+
 .box-popularity {
   margin: 30px;
   line-height: 50px;
   justify-self: end;
+}
+
+.box-rating {
+  background-color: var(--basic-white-smoke);
+  color: var(--basic-special-gray);
 }
 
 /* Footer */
