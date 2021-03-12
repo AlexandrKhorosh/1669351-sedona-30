@@ -1,20 +1,17 @@
 const searchHotels = document.querySelector(".button__search__hotels");
 const formHotels = document.querySelector(".form__search__hotels");
 const dateInput = document.querySelectorAll(".input__date");
-const form = document.querySelector(".form__search__hotels");
 const search = document.querySelector(".form__search");
+const buttonSearch = document.querySelector(".button__submit__search__hotels")
 
-searchHotels.addEventListener("click", function (evt) {
+searchHotels.addEventListener("click", (evt) => {
   evt.preventDefault();
-  if (formHotels.classList.contains("show")) {
-    formHotels.classList.remove("show")
-  } else {
-    formHotels.classList.add("show")
-    formHotels.classList.add("animfadeIn")
-  }
+  formHotels.classList.toggle("no__show");
+  formHotels.classList.add("animfadeIn")
 });
 
-console.log(dateInput);
+formHotels.classList.add("no__show");
+
 
 dateInput.forEach(function (input) {
   input.addEventListener("change", function (evt) {
@@ -24,4 +21,8 @@ dateInput.forEach(function (input) {
       this.classList.remove("modal__error")
     }
   });
+});
+
+buttonSearch.addEventListener("click", function (evt) {
+  evt.preventDefault();
 });
